@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Search Plugin Examples</title>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.0/flatly/bootstrap.min.css">
+</head>
+<body>
+	<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/other/filter-group-elements-search.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+	<div class="container" style="margin:150px auto">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="page-header">
+					<h1>jQuery Search Plugin Examples</h1>
+					<p class="lead">A tiny jQuery plugin to filter a group of elements on your page.</p>
+				</div>
+				
+				<div class="page-header">
+					<h3>Examples</h3>
+				</div>
+				
+				<h4>Search in Text on List Element</h4>
+				<input type="text" id="search1" class="form-control" placeholder="Type to search...">
+				<hr />
+				<ul id="search-to-1">
+					<li>Han Solo</li>
+					<li>Darth Vader</li>
+					<li>Boba Fett</li>
+					<li>R2-D2</li>
+					<li>Chewbacca</li>
+					<li>Yoda</li>
+					<li>Luke Skywalker</li>
+					<li>Darth Maul</li>
+					<li>Stormtrooper</li>
+					<li>Princess Leia</li>
+					<li>Ben Kenobi</li>
+					<li>Anakin Skywalker</li>
+				</ul>
+				<h4>Search in Text on Paragraph Element</h4>
+				<input type="text" id="search2" class="form-control" placeholder="Type to search...">
+				<hr />
+				<div id="search-to-2">
+					<p>Han Solo</p>
+					<p>Darth Vader</p>
+					<p>Boba Fett</p>
+					<p>R2-D2</p>
+					<p>Chewbacca</p>
+					<p>Yoda</p>
+					<p>Luke Skywalker</p>
+					<p>Darth Maul</p>
+					<p>Stormtrooper</p>
+					<p>Princess Leia</p>
+					<p>Ben Kenobi</p>
+					<p>Anakin Skywalker</p>
+				</div>
+				
+				<h4>Search in Data on div Element</h4>
+				<input type="text" id="search3" class="form-control" placeholder="Type to search...">
+				<hr />
+				<div id="search-to-3">
+					<div data-search-data="Han Solo">
+						<div class="well well-sm">Han Solo</div>
+					</div>
+					<div data-search-data="Darth Vader">
+						<div class="well well-sm">Darth Vader</div>
+					</div>
+					<div data-search-data="Boba Fett">
+						<div class="well well-sm">Boba Fett</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="jquery-search.js"></script>
+	
+	<script>
+		$('#search-to-1 li').jqSearch({
+			searchInput			: '#search1',
+			searchTarget		: 'text'
+		});
+		
+		$('#search-to-2 p').jqSearch({
+			searchInput			: '#search2',
+			searchTarget		: 'text',
+			animation			: 'slide'
+		});
+		
+		$('#search-to-3 > div').jqSearch({
+			searchInput			: '#search3',
+			searchTarget		: 'data'
+		});
+	</script>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+.slide-menu {
+    display: none !important;
+}
+
+@media(max-width:820px) {
+    .burger {
+        display: block !important;
+    }
+
+    .slide-menu {
+        display: block !important;
+    }
+
+    .slide-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        padding: 20px;
+        transition: left 0.3s;
+        z-index: 2;
+    }
+
+    .slide-menu.show {
+        left: 0;
+    }
+
+    .nav-link {
+        color: aliceblue !important;
+    }
+
+
+}
+
+/* .container-fluid input[type="checkbox"]:checked~.slide-menu {
+    transform: translateX(0);
+} */
+
+
+/*pagination */
+.pagination {
+    background: transparent;
+    margin-top: 20px;
+}
+
+.page-numbers {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    color: #007bff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.page-numbers:hover {
+    color: #fff;
+}
+
+.page-numbers {
+    color: rgb(102, 141, 173)
+}
+
+.dots {
+    font-weight: bold;
+}
+
+/* for drodown submenu */
+/* Initially hide the sub-menu */
+.sub-menu {
+    display: none;
+}
+
+/* Display the sub-menu when hovering over the parent nav-item */
+.nav-item.has-dropdown:hover .sub-menu {
+    display: block;
+    opacity: 1;
+}
+
+/* Style the sub-menu */
+.sub-menu li {
+    padding: 10px;
+    background-color: #333;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    /* Set a higher z-index to make the entire sub-menu appear above the content */
+    opacity: 0;
+    /* Initially set opacity to 0 */
+    transition: opacity 0.3s;
+    transform: translateX(-50%);
+    width: 230px;
+}
+
+.dropdown-menu {
+    background-color: rgb(14, 21, 37) !important;
+}
+
+.dropdown-menu>li>a {
+    color: white;
+}
