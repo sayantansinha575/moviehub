@@ -21,7 +21,6 @@ class Home extends BaseController
     {
         echo $name;
         die;
-        echo "work";
     }
     public function index($id = 0)
     {
