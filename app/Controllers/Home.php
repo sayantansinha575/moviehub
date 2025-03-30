@@ -21,10 +21,11 @@ class Home extends BaseController
     {
         echo $name;
         die;
+        echo "hello";
     }
     public function index($id = 0)
     {
-        echo "On Maintainence....";
+        echo "work on progres...";
         die;
         $filter = $this->request->getGet('serch_filter');
         $where = '';
