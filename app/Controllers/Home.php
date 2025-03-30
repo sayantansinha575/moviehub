@@ -25,7 +25,7 @@ class Home extends BaseController
     }
     public function index($id = 0)
     {
-        echo "work on progres...";
+        echo "work on on on progres...";
         die;
         $filter = $this->request->getGet('serch_filter');
         $where = '';
