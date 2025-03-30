@@ -19,4 +19,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /public_html/  # Change this to your FTP folder
+          server-dir: /htdocs/  # Change this to your FTP folder
