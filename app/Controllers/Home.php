@@ -25,7 +25,7 @@ class Home extends BaseController
     }
     public function index($id = 0)
     {
-        echo 'work';die;
+        // echo 'work';die;
         $filter = $this->request->getGet('serch_filter');
         $where = '';
         $where .= "`movies.title` LIKE '%$filter%'";
