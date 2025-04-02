@@ -25,8 +25,6 @@ class Home extends BaseController
     }
     public function index($id = 0)
     {
-        echo "On Server Maintainence...";
-        die;
         $filter = $this->request->getGet('serch_filter');
         $where = '';
         $where .= "`movies.title` LIKE '%$filter%'";
