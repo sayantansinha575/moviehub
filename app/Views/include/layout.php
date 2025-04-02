@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= site_url('favicon/' . config('siteConfig')->general['FAVICON_LOGO_32X32']); ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= site_url('favicon/' . config('siteConfig')->general['FAVICON_LOGO_16X16']); ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= site_url('favicon/' . config('SiteConfig')->general['FAVICON_LOGO_32X32']); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= site_url('favicon/' . config('SiteConfig')->general['FAVICON_LOGO_16X16']); ?>">
     <meta name="title" content="<?= config('SiteConfig')->meta['TITLE']; ?>">
     <meta name="description" content="<?= config('SiteConfig')->meta['DESCRIPTION']; ?>">
     <title><?= config('SiteConfig')->general['PAGE_TITLE']; ?></title>
